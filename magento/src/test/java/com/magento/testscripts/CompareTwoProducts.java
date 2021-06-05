@@ -26,6 +26,7 @@ public class CompareTwoProducts extends BaseTest {
 		wlib.verify(wlib.getPageTitle(), flib.readPropData(PROP_PATH, "homeTitle"), "Home Page");
 		hp.clickMobileBtn();
 		wlib.verify(wlib.getPageTitle(), flib.readPropData(PROP_PATH, "mobileTitle"), "Mobile Page");
+		//compare two products
 		mp.compareTwoProducts();
 		
 	}
