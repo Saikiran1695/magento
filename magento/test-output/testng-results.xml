@@ -74,19 +74,19 @@
       <![CDATA[Create New Customer Pageis Displayed]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="100845" started-at="2021-06-05T14:20:27 IST" finished-at="2021-06-05T14:22:08 IST">
+  <suite name="Suite" duration-ms="115235" started-at="2021-06-05T14:31:15 IST" finished-at="2021-06-05T14:33:10 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="100845" started-at="2021-06-05T14:20:27 IST" finished-at="2021-06-05T14:22:08 IST">
+    <test name="Test" duration-ms="115235" started-at="2021-06-05T14:31:15 IST" finished-at="2021-06-05T14:33:10 IST">
       <class name="com.magento.testscripts.VerifyShoppingCartIsEmpty">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.magento.testscripts.VerifyShoppingCartIsEmpty@2db7a79b]" name="openBrowser" is-config="true" duration-ms="14669" started-at="2021-06-05T14:20:52 IST" finished-at="2021-06-05T14:21:07 IST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.magento.testscripts.VerifyShoppingCartIsEmpty@2db7a79b]" name="openBrowser" is-config="true" duration-ms="16315" started-at="2021-06-05T14:31:50 IST" finished-at="2021-06-05T14:32:07 IST">
           <reporter-output>
             <line>
               <![CDATA[Home Pageis Displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="checkCartIsEmpty()[pri:0, instance:com.magento.testscripts.VerifyShoppingCartIsEmpty@2db7a79b]" name="checkCartIsEmpty" duration-ms="9301" started-at="2021-06-05T14:21:07 IST" finished-at="2021-06-05T14:21:16 IST">
+        <test-method status="PASS" signature="checkCartIsEmpty()[pri:0, instance:com.magento.testscripts.VerifyShoppingCartIsEmpty@2db7a79b]" name="checkCartIsEmpty" duration-ms="10250" started-at="2021-06-05T14:32:07 IST" finished-at="2021-06-05T14:32:17 IST">
           <reporter-output>
             <line>
               <![CDATA[checkCartIsEmptyStarted]]>
@@ -113,14 +113,14 @@
         </test-method> <!-- checkCartIsEmpty -->
       </class> <!-- com.magento.testscripts.VerifyShoppingCartIsEmpty -->
       <class name="com.magento.testscripts.CompareSonyExperiaPrice">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.magento.testscripts.CompareSonyExperiaPrice@4671e53b]" name="openBrowser" is-config="true" duration-ms="17068" started-at="2021-06-05T14:20:28 IST" finished-at="2021-06-05T14:20:45 IST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.magento.testscripts.CompareSonyExperiaPrice@4671e53b]" name="openBrowser" is-config="true" duration-ms="17314" started-at="2021-06-05T14:31:16 IST" finished-at="2021-06-05T14:31:33 IST">
           <reporter-output>
             <line>
               <![CDATA[Home Pageis Displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="verifySonyXperiaPrice()[pri:0, instance:com.magento.testscripts.CompareSonyExperiaPrice@4671e53b]" name="verifySonyXperiaPrice" duration-ms="7167" started-at="2021-06-05T14:20:45 IST" finished-at="2021-06-05T14:20:52 IST">
+        <test-method status="PASS" signature="verifySonyXperiaPrice()[pri:0, instance:com.magento.testscripts.CompareSonyExperiaPrice@4671e53b]" name="verifySonyXperiaPrice" duration-ms="16902" started-at="2021-06-05T14:31:33 IST" finished-at="2021-06-05T14:31:50 IST">
           <reporter-output>
             <line>
               <![CDATA[verifySonyXperiaPriceStarted]]>
@@ -144,14 +144,14 @@
         </test-method> <!-- verifySonyXperiaPrice -->
       </class> <!-- com.magento.testscripts.CompareSonyExperiaPrice -->
       <class name="com.magento.testscripts.VerifyCreateAccount">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.magento.testscripts.VerifyCreateAccount@b7dd107]" name="openBrowser" is-config="true" duration-ms="16789" started-at="2021-06-05T14:21:41 IST" finished-at="2021-06-05T14:21:58 IST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.magento.testscripts.VerifyCreateAccount@b7dd107]" name="openBrowser" is-config="true" duration-ms="16049" started-at="2021-06-05T14:32:43 IST" finished-at="2021-06-05T14:32:59 IST">
           <reporter-output>
             <line>
               <![CDATA[Home Pageis Displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="FAIL" signature="verifyAccountCreation()[pri:0, instance:com.magento.testscripts.VerifyCreateAccount@b7dd107]" name="verifyAccountCreation" duration-ms="9694" started-at="2021-06-05T14:21:58 IST" finished-at="2021-06-05T14:22:08 IST">
+        <test-method status="FAIL" signature="verifyAccountCreation()[pri:0, instance:com.magento.testscripts.VerifyCreateAccount@b7dd107]" name="verifyAccountCreation" duration-ms="11104" started-at="2021-06-05T14:32:59 IST" finished-at="2021-06-05T14:33:10 IST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [My Account] but found [Create New Customer Account]]]>
@@ -210,14 +210,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- verifyAccountCreation -->
       </class> <!-- com.magento.testscripts.VerifyCreateAccount -->
       <class name="com.magento.testscripts.ValidAllProducts">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.magento.testscripts.ValidAllProducts@6950e31]" name="openBrowser" is-config="true" duration-ms="19314" started-at="2021-06-05T14:21:16 IST" finished-at="2021-06-05T14:21:36 IST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.magento.testscripts.ValidAllProducts@6950e31]" name="openBrowser" is-config="true" duration-ms="18818" started-at="2021-06-05T14:32:17 IST" finished-at="2021-06-05T14:32:36 IST">
           <reporter-output>
             <line>
               <![CDATA[Home Pageis Displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="verifyAllProductsSortedByName()[pri:0, instance:com.magento.testscripts.ValidAllProducts@6950e31]" name="verifyAllProductsSortedByName" duration-ms="5593" started-at="2021-06-05T14:21:36 IST" finished-at="2021-06-05T14:21:41 IST">
+        <test-method status="PASS" signature="verifyAllProductsSortedByName()[pri:0, instance:com.magento.testscripts.ValidAllProducts@6950e31]" name="verifyAllProductsSortedByName" duration-ms="7370" started-at="2021-06-05T14:32:36 IST" finished-at="2021-06-05T14:32:43 IST">
           <reporter-output>
             <line>
               <![CDATA[verifyAllProductsSortedByNameStarted]]>

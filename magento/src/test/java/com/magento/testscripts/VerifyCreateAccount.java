@@ -53,7 +53,7 @@ public class VerifyCreateAccount extends BaseTest {
 				flib.readDataFromExcel(EXCEL_PATH, "sheet1", 1, 2),
 				flib.readDataFromExcel(EXCEL_PATH, "sheet1", 1, 3), 
 				flib.readDataFromExcel(EXCEL_PATH, "sheet1", 1, 4));
-		
+		wlib.waitForPage("My Account");
 		wlib.verify(wlib.getPageTitle(), flib.readPropData(PROP_PATH, "myAccountTitle"), "My Account Page");
 		mp.accountCreationConfirmatin();
 		WebDriverCommonLib.elementStatus("displayed", hp.getTvbtn(), "TV Button");
