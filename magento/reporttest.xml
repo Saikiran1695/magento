@@ -1,0 +1,8 @@
+
+<suite name="Suite">
+  <test  name="smoke test">
+    <classes>
+      <class name="com.magento.testscripts.VerifyCreateAccount"/>
+    </classes>
+  </test>
+</suite> 

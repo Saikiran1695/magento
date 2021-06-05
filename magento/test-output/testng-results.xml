@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[TestTest Runner Started]]>
+    </line>
+    <line>
+      <![CDATA[Home Pageis Displayed]]>
+    </line>
+    <line>
+      <![CDATA[verifySonyXperiaPriceStarted]]>
+    </line>
+    <line>
+      <![CDATA[THIS IS DEMO SITE FOR   ]]>
+    </line>
+    <line>
+      <![CDATA[Mobile Pageis Displayed]]>
+    </line>
+    <line>
+      <![CDATA[$100.00]]>
+    </line>
+    <line>
+      <![CDATA[Sony Xperia Pageis Displayed]]>
+    </line>
+    <line>
+      <![CDATA[$100.00]]>
+    </line>
+    <line>
+      <![CDATA[Home Pageis Displayed]]>
+    </line>
+    <line>
+      <![CDATA[checkCartIsEmptyStarted]]>
+    </line>
+    <line>
+      <![CDATA[Home Pageis Displayed]]>
+    </line>
+    <line>
+      <![CDATA[THIS IS DEMO SITE FOR   ]]>
+    </line>
+    <line>
+      <![CDATA[Mobile Pageis Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Shopping Cart Pageis Displayed]]>
+    </line>
+    <line>
+      <![CDATA[* The maximum quantity allowed for purchase is 500.]]>
+    </line>
+    <line>
+      <![CDATA[SHOPPING CART IS EMPTY]]>
+    </line>
+    <line>
+      <![CDATA[Home Pageis Displayed]]>
+    </line>
+    <line>
+      <![CDATA[verifyAllProductsSortedByNameStarted]]>
+    </line>
+    <line>
+      <![CDATA[THIS IS DEMO SITE FOR   ]]>
+    </line>
+    <line>
+      <![CDATA[Mobile Pageis Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Home Pageis Displayed]]>
+    </line>
+    <line>
+      <![CDATA[verifyAccountCreationStarted]]>
+    </line>
+    <line>
+      <![CDATA[Customer Login Pageis Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Create New Customer Pageis Displayed]]>
+    </line>
+    <line>
+      <![CDATA[My Account Pageis Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Thank you for registering with Main Website Store.]]>
+    </line>
+    <line>
+      <![CDATA[TV Pageis Displayed]]>
+    </line>
+    <line>
+      <![CDATA[My WishList Pageis Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Wishlist Sharing Pageis Displayed]]>
+    </line>
+    <line>
+      <![CDATA[My WishList Pageis Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Your Wishlist has been shared.]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="106516" started-at="2021-06-05T13:54:23 IST" finished-at="2021-06-05T13:56:10 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="106516" started-at="2021-06-05T13:54:23 IST" finished-at="2021-06-05T13:56:10 IST">
+      <class name="com.magento.testscripts.VerifyShoppingCartIsEmpty">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.magento.testscripts.VerifyShoppingCartIsEmpty@2db7a79b]" name="openBrowser" is-config="true" duration-ms="14453" started-at="2021-06-05T13:54:49 IST" finished-at="2021-06-05T13:55:03 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Home Pageis Displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="checkCartIsEmpty()[pri:0, instance:com.magento.testscripts.VerifyShoppingCartIsEmpty@2db7a79b]" name="checkCartIsEmpty" duration-ms="9298" started-at="2021-06-05T13:55:03 IST" finished-at="2021-06-05T13:55:12 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[checkCartIsEmptyStarted]]>
+            </line>
+            <line>
+              <![CDATA[Home Pageis Displayed]]>
+            </line>
+            <line>
+              <![CDATA[THIS IS DEMO SITE FOR   ]]>
+            </line>
+            <line>
+              <![CDATA[Mobile Pageis Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Shopping Cart Pageis Displayed]]>
+            </line>
+            <line>
+              <![CDATA[* The maximum quantity allowed for purchase is 500.]]>
+            </line>
+            <line>
+              <![CDATA[SHOPPING CART IS EMPTY]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkCartIsEmpty -->
+      </class> <!-- com.magento.testscripts.VerifyShoppingCartIsEmpty -->
+      <class name="com.magento.testscripts.CompareSonyExperiaPrice">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.magento.testscripts.CompareSonyExperiaPrice@4671e53b]" name="openBrowser" is-config="true" duration-ms="17612" started-at="2021-06-05T13:54:24 IST" finished-at="2021-06-05T13:54:42 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Home Pageis Displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="verifySonyXperiaPrice()[pri:0, instance:com.magento.testscripts.CompareSonyExperiaPrice@4671e53b]" name="verifySonyXperiaPrice" duration-ms="6897" started-at="2021-06-05T13:54:42 IST" finished-at="2021-06-05T13:54:49 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[verifySonyXperiaPriceStarted]]>
+            </line>
+            <line>
+              <![CDATA[THIS IS DEMO SITE FOR   ]]>
+            </line>
+            <line>
+              <![CDATA[Mobile Pageis Displayed]]>
+            </line>
+            <line>
+              <![CDATA[$100.00]]>
+            </line>
+            <line>
+              <![CDATA[Sony Xperia Pageis Displayed]]>
+            </line>
+            <line>
+              <![CDATA[$100.00]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySonyXperiaPrice -->
+      </class> <!-- com.magento.testscripts.CompareSonyExperiaPrice -->
+      <class name="com.magento.testscripts.VerifyCreateAccount">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.magento.testscripts.VerifyCreateAccount@b7dd107]" name="openBrowser" is-config="true" duration-ms="15633" started-at="2021-06-05T13:55:33 IST" finished-at="2021-06-05T13:55:48 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Home Pageis Displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="verifyAccountCreation()[pri:0, instance:com.magento.testscripts.VerifyCreateAccount@b7dd107]" name="verifyAccountCreation" duration-ms="21486" started-at="2021-06-05T13:55:48 IST" finished-at="2021-06-05T13:56:10 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[verifyAccountCreationStarted]]>
+            </line>
+            <line>
+              <![CDATA[Customer Login Pageis Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Create New Customer Pageis Displayed]]>
+            </line>
+            <line>
+              <![CDATA[My Account Pageis Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Thank you for registering with Main Website Store.]]>
+            </line>
+            <line>
+              <![CDATA[TV Pageis Displayed]]>
+            </line>
+            <line>
+              <![CDATA[My WishList Pageis Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Wishlist Sharing Pageis Displayed]]>
+            </line>
+            <line>
+              <![CDATA[My WishList Pageis Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Your Wishlist has been shared.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyAccountCreation -->
+      </class> <!-- com.magento.testscripts.VerifyCreateAccount -->
+      <class name="com.magento.testscripts.ValidAllProducts">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.magento.testscripts.ValidAllProducts@6950e31]" name="openBrowser" is-config="true" duration-ms="15447" started-at="2021-06-05T13:55:12 IST" finished-at="2021-06-05T13:55:28 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Home Pageis Displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="verifyAllProductsSortedByName()[pri:0, instance:com.magento.testscripts.ValidAllProducts@6950e31]" name="verifyAllProductsSortedByName" duration-ms="4889" started-at="2021-06-05T13:55:28 IST" finished-at="2021-06-05T13:55:33 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[verifyAllProductsSortedByNameStarted]]>
+            </line>
+            <line>
+              <![CDATA[THIS IS DEMO SITE FOR   ]]>
+            </line>
+            <line>
+              <![CDATA[Mobile Pageis Displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyAllProductsSortedByName -->
+      </class> <!-- com.magento.testscripts.ValidAllProducts -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
