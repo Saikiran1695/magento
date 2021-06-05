@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jun 05 13:54:23 IST 2021</td>
+<td>Started on:</td><td>Sat Jun 05 14:20:27 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>106 seconds (106516 ms)</td>
+<tr><td>Total time:</td><td>100 seconds (100845 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,69 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.magento.testscripts.VerifyCreateAccount.verifyAccountCreation()'><b>verifyAccountCreation</b><br>Test class: com.magento.testscripts.VerifyCreateAccount<br/>
+<a href="#Output-1957282992" onClick='toggleBox("Output-1957282992", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1957282992" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1957282992">
+verifyAccountCreationStarted<br/>
+Customer Login Pageis Displayed<br/>
+Create New Customer Pageis Displayed<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [My Account] but found [Create New Customer Account]
+	at com.magento.genericlib.WebDriverCommonLib.verify(WebDriverCommonLib.java:27)
+	at com.magento.testscripts.VerifyCreateAccount.verifyAccountCreation(VerifyCreateAccount.java:57)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1957282992", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1957282992'><pre>java.lang.AssertionError: expected [My Account] but found [Create New Customer Account]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.magento.genericlib.WebDriverCommonLib.verify(WebDriverCommonLib.java:27)
+	at com.magento.testscripts.VerifyCreateAccount.verifyAccountCreation(VerifyCreateAccount.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>9</td>
+<td>com.magento.testscripts.VerifyCreateAccount@b7dd107</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,10 +139,10 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.magento.testscripts.VerifyShoppingCartIsEmpty.checkCartIsEmpty()'><b>checkCartIsEmpty</b><br>Test class: com.magento.testscripts.VerifyShoppingCartIsEmpty<br/>
-<a href="#Output-1059634518" onClick='toggleBox("Output-1059634518", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-836969741" onClick='toggleBox("Output-836969741", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1059634518" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1059634518">
+<a href="#Output-836969741" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-836969741">
 checkCartIsEmptyStarted<br/>
 Home Pageis Displayed<br/>
 THIS IS DEMO SITE FOR   <br/>
@@ -93,46 +156,25 @@ SHOPPING CART IS EMPTY<br/>
 <td>9</td>
 <td>com.magento.testscripts.VerifyShoppingCartIsEmpty@2db7a79b</td></tr>
 <tr>
-<td title='com.magento.testscripts.VerifyCreateAccount.verifyAccountCreation()'><b>verifyAccountCreation</b><br>Test class: com.magento.testscripts.VerifyCreateAccount<br/>
-<a href="#Output-195970976" onClick='toggleBox("Output-195970976", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-195970976" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-195970976">
-verifyAccountCreationStarted<br/>
-Customer Login Pageis Displayed<br/>
-Create New Customer Pageis Displayed<br/>
-My Account Pageis Displayed<br/>
-Thank you for registering with Main Website Store.<br/>
-TV Pageis Displayed<br/>
-My WishList Pageis Displayed<br/>
-Wishlist Sharing Pageis Displayed<br/>
-My WishList Pageis Displayed<br/>
-Your Wishlist has been shared.<br/>
-</div>
-</td>
-<td></td>
-<td>21</td>
-<td>com.magento.testscripts.VerifyCreateAccount@b7dd107</td></tr>
-<tr>
 <td title='com.magento.testscripts.ValidAllProducts.verifyAllProductsSortedByName()'><b>verifyAllProductsSortedByName</b><br>Test class: com.magento.testscripts.ValidAllProducts<br/>
-<a href="#Output-473073770" onClick='toggleBox("Output-473073770", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-977997405" onClick='toggleBox("Output-977997405", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-473073770" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-473073770">
+<a href="#Output-977997405" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-977997405">
 verifyAllProductsSortedByNameStarted<br/>
 THIS IS DEMO SITE FOR   <br/>
 Mobile Pageis Displayed<br/>
 </div>
 </td>
 <td></td>
-<td>4</td>
+<td>5</td>
 <td>com.magento.testscripts.ValidAllProducts@6950e31</td></tr>
 <tr>
 <td title='com.magento.testscripts.CompareSonyExperiaPrice.verifySonyXperiaPrice()'><b>verifySonyXperiaPrice</b><br>Test class: com.magento.testscripts.CompareSonyExperiaPrice<br/>
-<a href="#Output-146874094" onClick='toggleBox("Output-146874094", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-2123222442" onClick='toggleBox("Output-2123222442", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-146874094" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-146874094">
+<a href="#Output-2123222442" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2123222442">
 verifySonyXperiaPriceStarted<br/>
 THIS IS DEMO SITE FOR   <br/>
 Mobile Pageis Displayed<br/>
@@ -142,7 +184,7 @@ $100.00<br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
+<td>7</td>
 <td>com.magento.testscripts.CompareSonyExperiaPrice@4671e53b</td></tr>
 </table><p>
 </body>

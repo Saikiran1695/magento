@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>F:\Selenium\magento\report.xml</span>
+                    <span>C:\Users\Administrator\git\repository3\magento\report.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.magento.testscripts.VerifyCreateAccount" hash-for-method="verifyAccountCreation">verifyAccountCreation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,11 +117,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.magento.testscripts.VerifyShoppingCartIsEmpty" hash-for-method="checkCartIsEmpty">checkCartIsEmpty</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.magento.testscripts.VerifyCreateAccount" hash-for-method="verifyAccountCreation">verifyAccountCreation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -132,6 +141,27 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.magento.testscripts.VerifyCreateAccount</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAccountCreation">
+                  </a> <!-- verifyAccountCreation -->
+                  <span class="method-name">verifyAccountCreation</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [My Account] but found [Create New Customer Account]
+	at com.magento.genericlib.WebDriverCommonLib.verify(WebDriverCommonLib.java:27)
+	at com.magento.testscripts.VerifyCreateAccount.verifyAccountCreation(VerifyCreateAccount.java:57)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -143,21 +173,6 @@
                   <a name="verifyAllProductsSortedByName">
                   </a> <!-- verifyAllProductsSortedByName -->
                   <span class="method-name">verifyAllProductsSortedByName</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.magento.testscripts.VerifyCreateAccount</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyAccountCreation">
-                  </a> <!-- verifyAccountCreation -->
-                  <span class="method-name">verifyAccountCreation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -195,7 +210,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">F:\Selenium\magento\report.xml</span>
+            <span class="header-content">C:\Users\Administrator\git\repository3\magento\report.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -251,24 +266,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyAccountCreation')
 data.setCell(0, 2, 'com.magento.testscripts.VerifyCreateAccount')
-data.setCell(0, 3, 21486);
+data.setCell(0, 3, 9694);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'checkCartIsEmpty')
 data.setCell(1, 2, 'com.magento.testscripts.VerifyShoppingCartIsEmpty')
-data.setCell(1, 3, 9298);
+data.setCell(1, 3, 9301);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifySonyXperiaPrice')
 data.setCell(2, 2, 'com.magento.testscripts.CompareSonyExperiaPrice')
-data.setCell(2, 3, 6897);
+data.setCell(2, 3, 7167);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyAllProductsSortedByName')
 data.setCell(3, 2, 'com.magento.testscripts.ValidAllProducts')
-data.setCell(3, 3, 4889);
+data.setCell(3, 3, 5593);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 42 seconds</span>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -285,6 +300,17 @@ return data;
                 <span class="reporter-method-output">verifyAllProductsSortedByNameStarted</span>
                 <span class="reporter-method-output">THIS IS DEMO SITE FOR   </span>
                 <span class="reporter-method-output">Mobile Pageis Displayed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySonyXperiaPrice</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">verifySonyXperiaPriceStarted</span>
+                <span class="reporter-method-output">THIS IS DEMO SITE FOR   </span>
+                <span class="reporter-method-output">Mobile Pageis Displayed</span>
+                <span class="reporter-method-output">$100.00</span>
+                <span class="reporter-method-output">Sony Xperia Pageis Displayed</span>
+                <span class="reporter-method-output">$100.00</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -305,24 +331,6 @@ return data;
                 <span class="reporter-method-output">verifyAccountCreationStarted</span>
                 <span class="reporter-method-output">Customer Login Pageis Displayed</span>
                 <span class="reporter-method-output">Create New Customer Pageis Displayed</span>
-                <span class="reporter-method-output">My Account Pageis Displayed</span>
-                <span class="reporter-method-output">Thank you for registering with Main Website Store.</span>
-                <span class="reporter-method-output">TV Pageis Displayed</span>
-                <span class="reporter-method-output">My WishList Pageis Displayed</span>
-                <span class="reporter-method-output">Wishlist Sharing Pageis Displayed</span>
-                <span class="reporter-method-output">My WishList Pageis Displayed</span>
-                <span class="reporter-method-output">Your Wishlist has been shared.</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">verifySonyXperiaPrice</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">verifySonyXperiaPriceStarted</span>
-                <span class="reporter-method-output">THIS IS DEMO SITE FOR   </span>
-                <span class="reporter-method-output">Mobile Pageis Displayed</span>
-                <span class="reporter-method-output">$100.00</span>
-                <span class="reporter-method-output">Sony Xperia Pageis Displayed</span>
-                <span class="reporter-method-output">$100.00</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -347,40 +355,42 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifySonyXperiaPrice</span>
-                <span class="method-start">17637 ms</span>
+                <span class="method-start">17103 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.magento.testscripts.VerifyShoppingCartIsEmpty</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">24544 ms</span>
+                <span class="method-start">24281 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">checkCartIsEmpty</span>
-                <span class="method-start">38997 ms</span>
+                <span class="method-start">38950 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.magento.testscripts.ValidAllProducts</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">48299 ms</span>
+                <span class="method-start">48255 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyAllProductsSortedByName</span>
-                <span class="method-start">63746 ms</span>
+                <span class="method-start">67570 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.magento.testscripts.VerifyCreateAccount</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">68638 ms</span>
+                <span class="method-start">73166 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyAccountCreation</span>
-                <span class="method-start">84272 ms</span>
+                <span class="method-start">89956 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
