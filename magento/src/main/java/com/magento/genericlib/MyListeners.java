@@ -18,7 +18,7 @@ public class MyListeners extends BaseTest implements ITestListener  {
 	public static ExtentTest test;
 	
 	public void onTestStart(ITestResult result) {
-		Reporter.log(result.getName()+"Started", true);
+		Reporter.log(result.getName()+" Started ", true);
 			}
 	public void onTestSuccess(ITestResult result) {
 		test.pass(MarkupHelper.createLabel(result.getName()+ " is passed", ExtentColor.GREEN));
@@ -41,12 +41,12 @@ public class MyListeners extends BaseTest implements ITestListener  {
 	}
 	
 	public void onTestSkipped(ITestResult result) {
-		test.skip(MarkupHelper.createLabel(result.getName()+ " is skipped", ExtentColor.YELLOW));
+		test.skip(MarkupHelper.createLabel(result.getName()+ " is skipped ", ExtentColor.YELLOW));
 		test.skip(result.getThrowable());
 	}
 	
 	public void onStart(ITestContext context) {
-		Reporter.log(context.getName()+"Test Runner Started", true);
+		Reporter.log(context.getName()+" Test Runner Started ", true);
 		FileLib flib= new FileLib();
 		 repo= new ExtentReports();
 		spark=new ExtentSparkReporter(BaseTest.reportPath+ "/reports/extentreport.html");
@@ -69,7 +69,7 @@ public class MyListeners extends BaseTest implements ITestListener  {
 	}
 	
 	public void onFinish(ITestContext context) {
-		Reporter.log(context.getName()+"Test Runner Completed", true);
+		Reporter.log(context.getName()+" Test Runner Completed ", true);
 		
 		// Saving or writing all the logs into the reports
 		repo.flush();

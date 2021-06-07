@@ -10,6 +10,7 @@ public class BaseTest implements IAutoConsts{
 	
 	public static String reportPath=System.getProperty("user.dir");
 	public static WebDriver driver;
+	
 	@BeforeClass
 	public void openBrowser() throws Throwable {
 		FileLib flib=new FileLib();

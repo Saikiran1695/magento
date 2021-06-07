@@ -1,65 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
     <line>
-      <![CDATA[TestTest Runner Started]]>
-    </line>
-    <line>
-      <![CDATA[Home Pageis Displayed]]>
-    </line>
-    <line>
-      <![CDATA[verifySonyXperiaPriceStarted]]>
-    </line>
-    <line>
-      <![CDATA[THIS IS DEMO SITE FOR   ]]>
-    </line>
-    <line>
-      <![CDATA[Mobile Pageis Displayed]]>
-    </line>
-    <line>
-      <![CDATA[$100.00]]>
-    </line>
-    <line>
-      <![CDATA[Sony Xperia Pageis Displayed]]>
-    </line>
-    <line>
-      <![CDATA[$100.00]]>
-    </line>
-    <line>
-      <![CDATA[Home Pageis Displayed]]>
-    </line>
-    <line>
-      <![CDATA[checkCartIsEmptyStarted]]>
-    </line>
-    <line>
-      <![CDATA[Home Pageis Displayed]]>
-    </line>
-    <line>
-      <![CDATA[THIS IS DEMO SITE FOR   ]]>
-    </line>
-    <line>
-      <![CDATA[Mobile Pageis Displayed]]>
-    </line>
-    <line>
-      <![CDATA[Shopping Cart Pageis Displayed]]>
-    </line>
-    <line>
-      <![CDATA[* The maximum quantity allowed for purchase is 500.]]>
-    </line>
-    <line>
-      <![CDATA[SHOPPING CART IS EMPTY]]>
-    </line>
-    <line>
-      <![CDATA[Home Pageis Displayed]]>
-    </line>
-    <line>
-      <![CDATA[verifyAllProductsSortedByNameStarted]]>
-    </line>
-    <line>
-      <![CDATA[THIS IS DEMO SITE FOR   ]]>
-    </line>
-    <line>
-      <![CDATA[Mobile Pageis Displayed]]>
+      <![CDATA[Default testTest Runner Started]]>
     </line>
     <line>
       <![CDATA[Home Pageis Displayed]]>
@@ -74,97 +17,52 @@
       <![CDATA[Create New Customer Pageis Displayed]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="115235" started-at="2021-06-05T14:31:15 IST" finished-at="2021-06-05T14:33:10 IST">
+  <suite name="Default suite" duration-ms="48834" started-at="2021-06-05T15:02:52 IST" finished-at="2021-06-05T15:03:41 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="115235" started-at="2021-06-05T14:31:15 IST" finished-at="2021-06-05T14:33:10 IST">
-      <class name="com.magento.testscripts.VerifyShoppingCartIsEmpty">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.magento.testscripts.VerifyShoppingCartIsEmpty@2db7a79b]" name="openBrowser" is-config="true" duration-ms="16315" started-at="2021-06-05T14:31:50 IST" finished-at="2021-06-05T14:32:07 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Home Pageis Displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="checkCartIsEmpty()[pri:0, instance:com.magento.testscripts.VerifyShoppingCartIsEmpty@2db7a79b]" name="checkCartIsEmpty" duration-ms="10250" started-at="2021-06-05T14:32:07 IST" finished-at="2021-06-05T14:32:17 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[checkCartIsEmptyStarted]]>
-            </line>
-            <line>
-              <![CDATA[Home Pageis Displayed]]>
-            </line>
-            <line>
-              <![CDATA[THIS IS DEMO SITE FOR   ]]>
-            </line>
-            <line>
-              <![CDATA[Mobile Pageis Displayed]]>
-            </line>
-            <line>
-              <![CDATA[Shopping Cart Pageis Displayed]]>
-            </line>
-            <line>
-              <![CDATA[* The maximum quantity allowed for purchase is 500.]]>
-            </line>
-            <line>
-              <![CDATA[SHOPPING CART IS EMPTY]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- checkCartIsEmpty -->
-      </class> <!-- com.magento.testscripts.VerifyShoppingCartIsEmpty -->
-      <class name="com.magento.testscripts.CompareSonyExperiaPrice">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.magento.testscripts.CompareSonyExperiaPrice@4671e53b]" name="openBrowser" is-config="true" duration-ms="17314" started-at="2021-06-05T14:31:16 IST" finished-at="2021-06-05T14:31:33 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Home Pageis Displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="verifySonyXperiaPrice()[pri:0, instance:com.magento.testscripts.CompareSonyExperiaPrice@4671e53b]" name="verifySonyXperiaPrice" duration-ms="16902" started-at="2021-06-05T14:31:33 IST" finished-at="2021-06-05T14:31:50 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[verifySonyXperiaPriceStarted]]>
-            </line>
-            <line>
-              <![CDATA[THIS IS DEMO SITE FOR   ]]>
-            </line>
-            <line>
-              <![CDATA[Mobile Pageis Displayed]]>
-            </line>
-            <line>
-              <![CDATA[$100.00]]>
-            </line>
-            <line>
-              <![CDATA[Sony Xperia Pageis Displayed]]>
-            </line>
-            <line>
-              <![CDATA[$100.00]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifySonyXperiaPrice -->
-      </class> <!-- com.magento.testscripts.CompareSonyExperiaPrice -->
+    <test name="Default test" duration-ms="48834" started-at="2021-06-05T15:02:52 IST" finished-at="2021-06-05T15:03:41 IST">
       <class name="com.magento.testscripts.VerifyCreateAccount">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.magento.testscripts.VerifyCreateAccount@b7dd107]" name="openBrowser" is-config="true" duration-ms="16049" started-at="2021-06-05T14:32:43 IST" finished-at="2021-06-05T14:32:59 IST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.magento.testscripts.VerifyCreateAccount@66d1af89]" name="openBrowser" is-config="true" duration-ms="24280" started-at="2021-06-05T15:02:54 IST" finished-at="2021-06-05T15:03:18 IST">
           <reporter-output>
             <line>
               <![CDATA[Home Pageis Displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="FAIL" signature="verifyAccountCreation()[pri:0, instance:com.magento.testscripts.VerifyCreateAccount@b7dd107]" name="verifyAccountCreation" duration-ms="11104" started-at="2021-06-05T14:32:59 IST" finished-at="2021-06-05T14:33:10 IST">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="verifyAccountCreation()[pri:0, instance:com.magento.testscripts.VerifyCreateAccount@66d1af89]" name="verifyAccountCreation" duration-ms="22416" started-at="2021-06-05T15:03:18 IST" finished-at="2021-06-05T15:03:41 IST">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[expected [My Account] but found [Create New Customer Account]]]>
+              <![CDATA[Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-36RUSQK', ip: '192.168.230.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 27964, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 07496812-e990-443d-aece-69e9e5ae0ef6]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [My Account] but found [Create New Customer Account]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at org.testng.Assert.assertEquals(Assert.java:585)
-at com.magento.genericlib.WebDriverCommonLib.verify(WebDriverCommonLib.java:27)
-at com.magento.testscripts.VerifyCreateAccount.verifyAccountCreation(VerifyCreateAccount.java:57)
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-36RUSQK', ip: '192.168.230.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 27964, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 07496812-e990-443d-aece-69e9e5ae0ef6
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+at org.openqa.selenium.support.ui.ExpectedConditions$2.apply(ExpectedConditions.java:86)
+at org.openqa.selenium.support.ui.ExpectedConditions$2.apply(ExpectedConditions.java:81)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+at com.magento.genericlib.WebDriverCommonLib.waitForPage(WebDriverCommonLib.java:33)
+at com.magento.testscripts.VerifyCreateAccount.verifyAccountCreation(VerifyCreateAccount.java:56)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -195,7 +93,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
             <line>
               <![CDATA[verifyAccountCreationStarted]]>
@@ -209,28 +107,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- verifyAccountCreation -->
       </class> <!-- com.magento.testscripts.VerifyCreateAccount -->
-      <class name="com.magento.testscripts.ValidAllProducts">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.magento.testscripts.ValidAllProducts@6950e31]" name="openBrowser" is-config="true" duration-ms="18818" started-at="2021-06-05T14:32:17 IST" finished-at="2021-06-05T14:32:36 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Home Pageis Displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="verifyAllProductsSortedByName()[pri:0, instance:com.magento.testscripts.ValidAllProducts@6950e31]" name="verifyAllProductsSortedByName" duration-ms="7370" started-at="2021-06-05T14:32:36 IST" finished-at="2021-06-05T14:32:43 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[verifyAllProductsSortedByNameStarted]]>
-            </line>
-            <line>
-              <![CDATA[THIS IS DEMO SITE FOR   ]]>
-            </line>
-            <line>
-              <![CDATA[Mobile Pageis Displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyAllProductsSortedByName -->
-      </class> <!-- com.magento.testscripts.ValidAllProducts -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

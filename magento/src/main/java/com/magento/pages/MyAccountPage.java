@@ -17,6 +17,18 @@ public class MyAccountPage {
 		PageFactory.initElements(BaseTest.driver, this);
 	}
 	
+	public WebElement getConfirmMsg() {
+		return confirmMsg;
+	}
+
+	public WebElement getTvLink() {
+		return tvLink;
+	}
+
+	public WebElement getMyWishlistLink() {
+		return myWishlistLink;
+	}
+
 	public void accountCreationConfirmatin() {
 		Reporter.log(confirmMsg.getText(), true);
 		tvLink.click();

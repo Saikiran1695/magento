@@ -8,18 +8,62 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">115,235</td><td></td><td></td></tr>
+<tr><th colspan="7">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">48,834</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.magento.testscripts.VerifyCreateAccount</td><td><a href="#m0">verifyAccountCreation</a></td><td rowspan="1">1622883779677</td><td rowspan="1">11104</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.magento.testscripts.CompareSonyExperiaPrice</td><td><a href="#m1">verifySonyXperiaPrice</a></td><td rowspan="1">1622883693951</td><td rowspan="1">16902</td></tr><tr class="passedodd"><td rowspan="1">com.magento.testscripts.ValidAllProducts</td><td><a href="#m2">verifyAllProductsSortedByName</a></td><td rowspan="1">1622883756254</td><td rowspan="1">7370</td></tr><tr class="passedeven"><td rowspan="1">com.magento.testscripts.VerifyShoppingCartIsEmpty</td><td><a href="#m3">checkCartIsEmpty</a></td><td rowspan="1">1622883727181</td><td rowspan="1">10250</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.magento.testscripts.VerifyCreateAccount</td><td><a href="#m0">verifyAccountCreation</a></td><td rowspan="1">1622885598762</td><td rowspan="1">22416</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.magento.testscripts.VerifyCreateAccount#verifyAccountCreation</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">verifyAccountCreationStarted<br/>Customer Login Pageis Displayed<br/>Create New Customer Pageis Displayed</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [My Account] but found [Create New Customer Account]
-	at com.magento.genericlib.WebDriverCommonLib.verify(WebDriverCommonLib.java:27)
-	at com.magento.testscripts.VerifyCreateAccount.verifyAccountCreation(VerifyCreateAccount.java:57)
+<h2>Default test</h2><h3 id="m0">com.magento.testscripts.VerifyCreateAccount#verifyAccountCreation</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">verifyAccountCreationStarted<br/>Customer Login Pageis Displayed<br/>Create New Customer Pageis Displayed</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-36RUSQK&apos;, ip: &apos;192.168.230.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 27964, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 07496812-e990-443d-aece-69e9e5ae0ef6
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at org.openqa.selenium.support.ui.ExpectedConditions$2.apply(ExpectedConditions.java:86)
+	at org.openqa.selenium.support.ui.ExpectedConditions$2.apply(ExpectedConditions.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.magento.genericlib.WebDriverCommonLib.waitForPage(WebDriverCommonLib.java:33)
+	at com.magento.testscripts.VerifyCreateAccount.verifyAccountCreation(VerifyCreateAccount.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.magento.testscripts.CompareSonyExperiaPrice#verifySonyXperiaPrice</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">verifySonyXperiaPriceStarted<br/>THIS IS DEMO SITE FOR   <br/>Mobile Pageis Displayed<br/>$100.00<br/>Sony Xperia Pageis Displayed<br/>$100.00</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.magento.testscripts.ValidAllProducts#verifyAllProductsSortedByName</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">verifyAllProductsSortedByNameStarted<br/>THIS IS DEMO SITE FOR   <br/>Mobile Pageis Displayed</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.magento.testscripts.VerifyShoppingCartIsEmpty#checkCartIsEmpty</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">checkCartIsEmptyStarted<br/>Home Pageis Displayed<br/>THIS IS DEMO SITE FOR   <br/>Mobile Pageis Displayed<br/>Shopping Cart Pageis Displayed<br/>* The maximum quantity allowed for purchase is 500.<br/>SHOPPING CART IS EMPTY</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

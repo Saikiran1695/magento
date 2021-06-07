@@ -25,7 +25,7 @@ public class WebDriverCommonLib extends BaseTest {
 
 	public void verify(String actual, String expected, String page) {
 		Assert.assertEquals(actual, expected);
-		Reporter.log(page + "is Displayed", true);
+		Reporter.log(page + " is Displayed ", true);
 	}
 
 	public void waitForPage(String title) {
