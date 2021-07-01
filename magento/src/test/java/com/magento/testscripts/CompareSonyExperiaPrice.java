@@ -23,13 +23,12 @@ public class CompareSonyExperiaPrice extends BaseTest{
 		WebDriverCommonLib.elementStatus("displayed", hp.getMobilebtn(), "Mobile Button");
 		hp.clickMobileBtn();
 		wlib.verify(wlib.getPageTitle(), flib.readPropData(PROP_PATH, "mobileTitle"), "Mobile Page");
-		WebDriverCommonLib.elementStatus("displayed", hp.getMobilebtn(), "Mobile Button");
 		WebDriverCommonLib.elementStatus("displayed", mp.getSonyXperiaProductPrice(), "Sony Xperia Product Price Text");
 		mp.getSonyXperiaProductPriceFromMobilePage();
 		WebDriverCommonLib.elementStatus("displayed", mp.getSonyXperiaProduct(), "Sony Xperia Product Button");
 		mp.clickOnSonyXperiaProduct();
 		wlib.verify(wlib.getPageTitle(), flib.readPropData(PROP_PATH, "sonyXperiaTitle"),"Sony Xperia Page");
-		WebDriverCommonLib.elementStatus("displayed", smp.getSonyXperiaProductPriceInSonyXperiaPage(), "Sony Xperia Product Button");
+		WebDriverCommonLib.elementStatus("displayed", smp.getSonyXperiaProductPriceInSonyXperiaPage(), "Get the price of Sony Xperia Product ");
 		smp.getSonyXperiaPriceFromSonyXperiaPage();
 		String text1=mp.getSonyXperiaPriceFromMobilePage();
 		String text2=smp.getSonyXperiaProductPriceFromSonyXperiaPage();

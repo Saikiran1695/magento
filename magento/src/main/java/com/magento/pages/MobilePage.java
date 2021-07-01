@@ -3,6 +3,7 @@ package com.magento.pages;
 import java.util.Iterator;
 import java.util.Set;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -122,24 +123,7 @@ public class MobilePage {
 		iphoneAddToCompareBtn.click();
 		compareBtn.click();
 		
-		String parent=BaseTest.driver.getWindowHandle();
-
-		Set<String>s=BaseTest.driver.getWindowHandles();
-
-		// Now iterate using Iterator
-		Iterator<String> I1= s.iterator();
-
-		while(I1.hasNext())
-		{
-
-		String child_window=I1.next();
-
-
-		if(!parent.equals(child_window))
-		{
-			BaseTest.driver.switchTo().window(child_window);
-			Reporter.log(text.getText(), true);
-	}
+		
 }
 	}
-}
+
